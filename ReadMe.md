@@ -23,3 +23,7 @@ cp -p $d/usr/share/icons/hicolor/64x64/apps/openra-ca.png images/
 ./CombinedArms-0.82-x86_64.AppImage --utility --extract ttnk2icon.shp
 
 ./CombinedArms-0.82-x86_64.AppImage --utility --png ttnkicon.shp temperat.pal
+
+#keyboard
+inkscape drawing.svg &
+#print to file "drawing.pdf"
