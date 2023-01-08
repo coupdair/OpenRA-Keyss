@@ -25,5 +25,6 @@ cp -p $d/usr/share/icons/hicolor/64x64/apps/openra-ca.png images/
 ./CombinedArms-0.82-x86_64.AppImage --utility --png ttnkicon.shp temperat.pal
 
 #keyboard
+gimp tabs.xcf images/glyphs-2x.png &
 inkscape drawing.svg &
 #print to file "drawing.pdf"
