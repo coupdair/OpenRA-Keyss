@@ -29,7 +29,7 @@
      inkscape:cx="418.11141"
      inkscape:cy="316.14341"
      inkscape:document-units="mm"
-     inkscape:current-layer="g3780"
+     inkscape:current-layer="g3944"
      showgrid="false"
      units="mm"
      inkscape:window-width="1644"
@@ -446,6 +446,24 @@
        id="image4050"
        x="419.63446"
        y="861.04077"
+       style="display:inline" />
+    <image
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tabs4keyb_scrin_shield_F9-F12.png"
+       xlink:href="tabs4keyb_scrin_shield_F9-F12.png"
+       y="808.51532"
+       x="708"
+       id="image4614"
+       height="51.090847"
+       width="269.29135"
+       style="display:inline" />
+    <image
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tabs4keyb_scrin_shield_F5-F8.png"
+       xlink:href="tabs4keyb_scrin_shield_F5-F8.png"
+       width="269.29135"
+       height="51.090847"
+       id="image4612"
+       x="417.63779"
+       y="808.51532"
        style="display:inline" />
   </g>
   <g
