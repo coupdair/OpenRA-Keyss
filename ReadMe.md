@@ -1,3 +1,23 @@
+OpenRA tree and keyboard
+
+# tree
+
+## build tree
+
+~~~ { .bash }
+dot -Tps graph.dot > graph.ps
+evince graph.ps &
+~~~
+
+# keyboard
+
+## keys
+
+## Fn key map
+
+
+# misc.
+
 ./CombinedArms-0.82-x86_64.AppImage --appimage-mount
 
 d=/tmp/.mount_Combinn5q6Tc
@@ -28,3 +48,5 @@ cp -p $d/usr/share/icons/hicolor/64x64/apps/openra-ca.png images/
 gimp tabs.xcf images/glyphs-2x.png &
 inkscape drawing.svg &
 #print to file "drawing.pdf"
+
+
