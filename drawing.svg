@@ -671,8 +671,8 @@
        y="719.29132"
        style="display:inline" />
     <image
-       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tabs4keyb_scrin_air_F9-F12.png"
-       xlink:href="tabs4keyb_scrin_air_F9-F12.png"
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tabs4keyb_scrin_vehicle_F9-F12.png"
+       xlink:href="tabs4keyb_scrin_vehicle_F9-F12.png"
        y="666.50635"
        x="708"
        id="image4624"
@@ -680,8 +680,8 @@
        width="269.29135"
        style="display:inline" />
     <image
-       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tabs4keyb_scrin_air_F5-F8.png"
-       xlink:href="tabs4keyb_scrin_air_F5-F8.png"
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tabs4keyb_scrin_vehicle_F5-F8.png"
+       xlink:href="tabs4keyb_scrin_vehicle_F5-F8.png"
        width="269.29135"
        height="51.090847"
        id="image4626"
@@ -697,7 +697,7 @@
      transform="translate(0,-308.2677)"
      sodipodi:insensitive="true">
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.35247558;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.35247558;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3990"
        width="66.970352"
        height="66.97036"
@@ -709,23 +709,23 @@
        height="66.618813"
        width="268.58731"
        id="rect3992"
-       style="fill:none;stroke:#000000;stroke-width:0.70402426;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       style="fill:none;stroke:#000000;stroke-width:0.70402426;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.70402426;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.70402426;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3994"
        width="268.58731"
        height="66.618813"
        x="418.46225"
        y="595.35089" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.70402426;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.70402426;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3996"
        width="268.58731"
        height="66.618813"
        x="709.01343"
        y="595.35089" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3998"
        width="66.97036"
        height="66.97036"
@@ -737,9 +737,9 @@
        height="66.97036"
        width="66.97036"
        id="rect4000"
-       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4002"
        width="66.97036"
        height="66.97036"
@@ -751,7 +751,7 @@
        height="66.97036"
        width="66.97036"
        id="rect4004"
-       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <image
        sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tab_air.png"
        xlink:href="tab_air.png"
@@ -786,5 +786,23 @@
        x="130.11923"
        y="647.29132"
        style="display:inline" />
+    <image
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tabs4keyb_scrin_air_F9-F12.png"
+       xlink:href="tabs4keyb_scrin_air_F9-F12.png"
+       style="display:inline"
+       width="269.29135"
+       height="51.090847"
+       id="image4630"
+       x="708"
+       y="595.64032" />
+    <image
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tabs4keyb_scrin_air_F5-F8.png"
+       xlink:href="tabs4keyb_scrin_air_F5-F8.png"
+       style="display:inline"
+       y="595.64032"
+       x="417.63779"
+       id="image4632"
+       height="51.090847"
+       width="269.29135" />
   </g>
 </svg>
