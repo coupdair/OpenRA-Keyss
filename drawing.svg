@@ -14,7 +14,7 @@
    height="744.09448"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="drawing.svg">
   <defs
      id="defs4" />
@@ -26,15 +26,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="272.55473"
-     inkscape:cy="275.3154"
+     inkscape:cx="418.11141"
+     inkscape:cy="316.14341"
      inkscape:document-units="mm"
-     inkscape:current-layer="g4026"
+     inkscape:current-layer="g3780"
      showgrid="false"
      units="mm"
-     inkscape:window-width="1331"
+     inkscape:window-width="1644"
      inkscape:window-height="980"
-     inkscape:window-x="539"
+     inkscape:window-x="195"
      inkscape:window-y="25"
      inkscape:window-maximized="0" />
   <metadata
@@ -173,59 +173,59 @@
        y="949.78253" />
     <text
        xml:space="preserve"
-       style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="142"
        y="994.64789"
-       id="text3848"
-       sodipodi:linespacing="125%"><tspan
+       id="text3848"><tspan
          sodipodi:role="line"
          id="tspan3850"
          x="142"
-         y="994.64789">F1</tspan></text>
+         y="994.64789"
+         style="font-size:32px;line-height:1.25;font-family:sans-serif">F1</tspan></text>
     <text
-       sodipodi:linespacing="125%"
        id="text3852"
        y="994.64789"
        x="208"
-       style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="994.64789"
          x="208"
          id="tspan3854"
-         sodipodi:role="line">F2</tspan></text>
+         sodipodi:role="line"
+         style="font-size:32px;line-height:1.25;font-family:sans-serif">F2</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="276"
        y="994.64789"
-       id="text3856"
-       sodipodi:linespacing="125%"><tspan
+       id="text3856"><tspan
          sodipodi:role="line"
          id="tspan3858"
          x="276"
-         y="994.64789">F3</tspan></text>
+         y="994.64789"
+         style="font-size:32px;line-height:1.25;font-family:sans-serif">F3</tspan></text>
     <text
-       sodipodi:linespacing="125%"
        id="text3860"
        y="994.64789"
        x="342"
-       style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="994.64789"
          x="342"
          id="tspan3862"
-         sodipodi:role="line">F4</tspan></text>
+         sodipodi:role="line"
+         style="font-size:32px;line-height:1.25;font-family:sans-serif">F4</tspan></text>
     <text
-       sodipodi:linespacing="125%"
        id="text3864"
        y="994.64789"
        x="37.061935"
-       style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="994.64789"
          x="37.061935"
          id="tspan3866"
-         sodipodi:role="line">esc.</tspan></text>
+         sodipodi:role="line"
+         style="font-size:32px;line-height:1.25;font-family:sans-serif">esc.</tspan></text>
   </g>
   <g
      transform="translate(0,-308.2677)"
@@ -240,9 +240,9 @@
        height="66.97036"
        width="66.970352"
        id="rect3782"
-       style="fill:none;stroke:#000000;stroke-width:0.35247558;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       style="fill:none;stroke:#000000;stroke-width:0.35247558;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.70402426;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.70402426;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3784"
        width="268.58731"
        height="66.618813"
@@ -254,23 +254,23 @@
        height="66.618813"
        width="268.58731"
        id="rect3786"
-       style="fill:none;stroke:#000000;stroke-width:0.70402426;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       style="fill:none;stroke:#000000;stroke-width:0.70402426;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        y="879.0921"
        x="709.01343"
        height="66.618813"
        width="268.58731"
        id="rect3788"
-       style="fill:none;stroke:#000000;stroke-width:0.70402426;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       style="fill:none;stroke:#000000;stroke-width:0.70402426;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        y="878.91632"
        x="127.73528"
        height="66.97036"
        width="66.97036"
        id="rect3790"
-       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3792"
        width="66.97036"
        height="66.97036"
@@ -282,60 +282,82 @@
        height="66.97036"
        width="66.97036"
        id="rect3794"
-       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3796"
        width="66.97036"
        height="66.97036"
        x="329.7038"
        y="878.91632" />
     <image
-       y="887.19904"
-       x="44.690666"
-       id="image3876"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tab_build.png"
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tab_build.png"
+       xlink:href="tab_build.png"
+       width="45.096634"
        height="53.149605"
-       width="45.096634" />
+       id="image3876"
+       x="44.690666"
+       y="887.19904" />
     <image
-       y="879.38153"
-       x="127.55905"
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tabs4keyb_scrin_build_F1-F4.png"
+       xlink:href="tabs4keyb_scrin_build_F1-F4.png"
+       width="269.29135"
+       height="51.090847"
        id="image3941"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tabs4keyb_scrin_build_F1-F4.png"
+       x="127.55905"
+       y="879.38153" />
+    <image
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tab_walk.png"
+       xlink:href="tab_walk.png"
+       width="12.025769"
+       height="14.173228"
+       id="image4053"
+       x="195.81024"
+       y="930.6673"
+       style="display:inline" />
+    <image
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tab_vehicle.png"
+       xlink:href="tab_vehicle.png"
+       y="930.48303"
+       x="330.52322"
+       id="image4059"
+       height="14.173228"
+       width="12.025769"
+       style="display:inline" />
+    <image
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tab_air.png"
+       xlink:href="tab_air.png"
+       width="12.025769"
+       height="14.173228"
+       id="image4064"
+       x="419.46732"
+       y="931.08893"
+       style="display:inline" />
+    <image
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tab_shield.png"
+       xlink:href="tab_shield.png"
+       width="12.025769"
+       height="14.173228"
+       id="image4070"
+       x="128.95175"
+       y="930.86572"
+       style="display:inline" />
+    <image
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tabs4keyb_scrin_build_F5-F8.png"
+       xlink:href="tabs4keyb_scrin_build_F5-F8.png"
+       y="879.38153"
+       x="417.63779"
+       id="image904"
        height="51.090847"
        width="269.29135" />
     <image
-       style="display:inline"
-       y="930.6673"
-       x="195.81024"
-       id="image4053"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tab_walk.png"
-       height="14.173228"
-       width="12.025769" />
-    <image
-       style="display:inline"
-       width="12.025769"
-       height="14.173228"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tab_vehicle.png"
-       id="image4059"
-       x="330.52322"
-       y="930.48303" />
-    <image
-       style="display:inline"
-       y="931.08893"
-       x="419.46732"
-       id="image4064"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tab_air.png"
-       height="14.173228"
-       width="12.025769" />
-    <image
-       style="display:inline"
-       y="930.86572"
-       x="128.95175"
-       id="image4070"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tab_shield.png"
-       height="14.173228"
-       width="12.025769" />
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tabs4keyb_scrin_build_F9-F12.png"
+       xlink:href="tabs4keyb_scrin_build_F9-F12.png"
+       width="269.29135"
+       height="51.090847"
+       id="image906"
+       x="708"
+       y="879.38153" />
   </g>
   <g
      inkscape:label="shield"
@@ -345,7 +367,7 @@
      style="display:inline"
      sodipodi:insensitive="true">
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.35247558;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.35247558;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3946"
        width="66.970352"
        height="66.97036"
@@ -357,23 +379,23 @@
        height="66.618813"
        width="268.58731"
        id="rect3948"
-       style="fill:none;stroke:#000000;stroke-width:0.70402426;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       style="fill:none;stroke:#000000;stroke-width:0.70402426;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.70402426;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.70402426;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3950"
        width="268.58731"
        height="66.618813"
        x="418.46225"
        y="808.22595" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.70402426;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.70402426;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3952"
        width="268.58731"
        height="66.618813"
        x="709.01343"
        y="808.22595" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3954"
        width="66.97036"
        height="66.97036"
@@ -385,9 +407,9 @@
        height="66.97036"
        width="66.97036"
        id="rect3956"
-       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3958"
        width="66.97036"
        height="66.97036"
@@ -399,29 +421,32 @@
        height="66.97036"
        width="66.97036"
        id="rect3960"
-       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <image
-       width="45.096634"
-       height="53.149605"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tab_shield.png"
-       id="image3962"
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tab_shield.png"
+       xlink:href="tab_shield.png"
+       y="816.33289"
        x="46.119236"
-       y="816.33289" />
+       id="image3962"
+       height="53.149605"
+       width="45.096634" />
     <image
-       width="269.29135"
-       height="51.090847"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tabs4keyb_scrin_shield_F1-F4.png"
-       id="image3964"
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tabs4keyb_scrin_shield_F1-F4.png"
+       xlink:href="tabs4keyb_scrin_shield_F1-F4.png"
+       y="808.51538"
        x="127.55905"
-       y="808.51538" />
+       id="image3964"
+       height="51.090847"
+       width="269.29135" />
     <image
-       style="display:inline"
-       y="861.04077"
-       x="419.63446"
-       id="image4050"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tab_air.png"
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tab_air.png"
+       xlink:href="tab_air.png"
+       width="12.025769"
        height="14.173228"
-       width="12.025769" />
+       id="image4050"
+       x="419.63446"
+       y="861.04077"
+       style="display:inline" />
   </g>
   <g
      style="display:inline"
@@ -487,35 +512,39 @@
        id="rect4042"
        style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <image
-       width="45.096634"
-       height="53.149605"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tab_walk.png"
-       id="image4044"
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tab_walk.png"
+       xlink:href="tab_walk.png"
+       y="745.4668"
        x="46.119236"
-       y="745.4668" />
+       id="image4044"
+       height="53.149605"
+       width="45.096634" />
     <image
-       width="269.29135"
-       height="51.090847"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tabs4keyb_scrin_walk_F1-F4.png"
-       id="image4046"
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tabs4keyb_scrin_walk_F1-F4.png"
+       xlink:href="tabs4keyb_scrin_walk_F1-F4.png"
+       y="737.64929"
        x="127.55905"
-       y="737.64929" />
+       id="image4046"
+       height="51.090847"
+       width="269.29135" />
     <image
-       width="12.025769"
-       height="14.173228"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tab_air.png"
-       id="image4048"
-       x="198.11923"
-       y="790.43414"
-       style="display:inline" />
-    <image
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tab_air.png"
+       xlink:href="tab_air.png"
        style="display:inline"
-       width="12.025769"
+       y="790.43414"
+       x="198.11923"
+       id="image4048"
        height="14.173228"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tab_build.png"
-       id="image3868"
+       width="12.025769" />
+    <image
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tab_build.png"
+       xlink:href="tab_build.png"
+       y="789.23975"
        x="263.04449"
-       y="789.23975" />
+       id="image3868"
+       height="14.173228"
+       width="12.025769"
+       style="display:inline" />
   </g>
   <g
      transform="translate(0,-308.2677)"
@@ -581,27 +610,30 @@
        x="329.7038"
        y="666.04126" />
     <image
-       y="674.32397"
-       x="46.119236"
-       id="image3984"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tab_vehicle.png"
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tab_vehicle.png"
+       xlink:href="tab_vehicle.png"
+       width="45.096634"
        height="53.149605"
-       width="45.096634" />
+       id="image3984"
+       x="46.119236"
+       y="674.32397" />
     <image
-       y="666.50647"
-       x="127.55905"
-       id="image3986"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tabs4keyb_scrin_vehicle_F1-F4.png"
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tabs4keyb_scrin_vehicle_F1-F4.png"
+       xlink:href="tabs4keyb_scrin_vehicle_F1-F4.png"
+       width="269.29135"
        height="51.090847"
-       width="269.29135" />
+       id="image3986"
+       x="127.55905"
+       y="666.50647" />
     <image
-       style="display:inline"
-       y="719.29132"
-       x="198.11923"
-       id="image4010"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tab_air.png"
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tab_air.png"
+       xlink:href="tab_air.png"
+       width="12.025769"
        height="14.173228"
-       width="12.025769" />
+       id="image4010"
+       x="198.11923"
+       y="719.29132"
+       style="display:inline" />
   </g>
   <g
      style="display:inline"
@@ -667,34 +699,38 @@
        id="rect4004"
        style="fill:none;stroke:#000000;stroke-width:0.35247561;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <image
-       width="45.096634"
-       height="53.149605"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tab_air.png"
-       id="image4006"
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tab_air.png"
+       xlink:href="tab_air.png"
+       y="603.45782"
        x="46.119236"
-       y="603.45782" />
+       id="image4006"
+       height="53.149605"
+       width="45.096634" />
     <image
-       width="269.29135"
-       height="51.090847"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tabs4keyb_scrin_air_F1-F4.png"
-       id="image4008"
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tabs4keyb_scrin_air_F1-F4.png"
+       xlink:href="tabs4keyb_scrin_air_F1-F4.png"
+       y="595.64032"
        x="127.55905"
-       y="595.64032" />
+       id="image4008"
+       height="51.090847"
+       width="269.29135" />
     <image
-       width="12.025769"
-       height="14.173228"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tab_air.png"
-       id="image4021"
-       x="198.11923"
-       y="647.29132"
-       style="display:inline" />
-    <image
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tab_air.png"
+       xlink:href="tab_air.png"
        style="display:inline"
        y="647.29132"
-       x="130.11923"
-       id="image4024"
-       xlink:href="file:///media/data_tmp/user/Seb/OpenRA/command-conquer-combined-arms/Combined_Arms_0.82/Linux/tab_air.png"
+       x="198.11923"
+       id="image4021"
        height="14.173228"
        width="12.025769" />
+    <image
+       sodipodi:absref="/media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/tab_air.png"
+       xlink:href="tab_air.png"
+       width="12.025769"
+       height="14.173228"
+       id="image4024"
+       x="130.11923"
+       y="647.29132"
+       style="display:inline" />
   </g>
 </svg>
