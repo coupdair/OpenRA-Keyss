@@ -74,6 +74,16 @@ air_F5[label="F5", color="white", shape="rect", image="tabs4keyb_scrin_air_F5.pn
   build_F5 -> build_F8[label="F8"];
   build_F6 -> build_F9[label="F9"];
   build_F9 -> build_F10[label="F10"];
+  ///shield links
+  build_F1 -> shield_F1[color="blue"]
+              shield_F1 -> shield_F2[color="white"]
+  build_F3 -> shield_F2[color="blue"]
+              shield_F2 -> shield_F3[color="white"]
+  build_F2 -> shield_F3[color="blue"]
+              shield_F3 -> shield_F4[color="white"]
+              shield_F4 -> shield_F5[color="white"]
+              shield_F5 -> shield_F6[color="white"]
+              shield_F6 -> shield_F7[color="white"]
   ///walk
   build_F2 -> walk_F1[color="blue"]
               walk_F1-> walk_F2[color="white"]
@@ -83,4 +93,19 @@ air_F5[label="F5", color="white", shape="rect", image="tabs4keyb_scrin_air_F5.pn
   build_F4 -> walk_F4[color="blue"]
   build_F2 -> walk_F6[color="blue"]
   build_F5 -> walk_F6[color="blue"]
+  ///vehicle links
+  build_F4 -> vehicle_F1[color="blue"]
+              vehicle_F1 -> vehicle_F2[color="white"]
+              vehicle_F2 -> vehicle_F3[color="white"]
+              vehicle_F3 -> vehicle_F4[color="white"]
+              vehicle_F4 -> vehicle_F5[color="white"]
+              vehicle_F5 -> vehicle_F6[color="white"]
+              vehicle_F6 -> vehicle_F7[color="white"]
+              vehicle_F7 -> vehicle_F8[color="white"]
+  ///air links
+  build_F8 -> air_F1[color="blue"]
+              air_F1 -> air_F2[color="white"]
+              air_F2 -> air_F3[color="white"]
+              air_F3 -> air_F4[color="white"]
+              air_F4 -> air_F5[color="white"]
 }//digraph
