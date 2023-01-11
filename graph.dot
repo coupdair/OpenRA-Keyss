@@ -24,7 +24,6 @@ digraph OpenRA
   build_F10[label="F10", color="white", shape="rect", image="tabs4keyb_scrin_build_F10.png"]
 
   //walk
-  ///walker1
   walk_F1[label="F1", color="white", shape="rect", image="tabs4keyb_scrin_walk_F1.png"]
   walk_F2[label="F2", color="white", shape="rect", image="tabs4keyb_scrin_walk_F2.png"]
   walk_F3[label="F3", color="white", shape="rect", image="tabs4keyb_scrin_walk_F3.png"]
@@ -58,5 +57,7 @@ digraph OpenRA
               walk_F2-> walk_F3[color="white"]
   build_F2 -> walk_F4[color="blue"]
               walk_F4 -> walk_F5[color="white"]
+  build_F4 -> walk_F4[color="blue"]
   build_F2 -> walk_F6[color="blue"]
+  build_F5 -> walk_F6[color="blue"]
 }//digraph
