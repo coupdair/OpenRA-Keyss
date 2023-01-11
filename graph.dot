@@ -23,13 +23,36 @@ digraph OpenRA
   ///tech+
   build_F10[label="F10", color="white", shape="rect", image="tabs4keyb_scrin_build_F10.png"]
 
-  //walk
-  walk_F1[label="F1", color="white", shape="rect", image="tabs4keyb_scrin_walk_F1.png"]
-  walk_F2[label="F2", color="white", shape="rect", image="tabs4keyb_scrin_walk_F2.png"]
-  walk_F3[label="F3", color="white", shape="rect", image="tabs4keyb_scrin_walk_F3.png"]
-  walk_F4[label="F4", color="white", shape="rect", image="tabs4keyb_scrin_walk_F4.png"]
-  walk_F5[label="F5", color="white", shape="rect", image="tabs4keyb_scrin_walk_F5.png"]
-  walk_F6[label="F6", color="white", shape="rect", image="tabs4keyb_scrin_walk_F6.png"]
+//shield
+shield_F1[label="F1", color="white", shape="rect", image="tabs4keyb_scrin_shield_F1.png"]
+shield_F2[label="F2", color="white", shape="rect", image="tabs4keyb_scrin_shield_F2.png"]
+shield_F3[label="F3", color="white", shape="rect", image="tabs4keyb_scrin_shield_F3.png"]
+shield_F4[label="F4", color="white", shape="rect", image="tabs4keyb_scrin_shield_F4.png"]
+shield_F5[label="F5", color="white", shape="rect", image="tabs4keyb_scrin_shield_F5.png"]
+shield_F6[label="F6", color="white", shape="rect", image="tabs4keyb_scrin_shield_F6.png"]
+shield_F7[label="F7", color="white", shape="rect", image="tabs4keyb_scrin_shield_F7.png"]
+//walk
+walk_F1[label="F1", color="white", shape="rect", image="tabs4keyb_scrin_walk_F1.png"]
+walk_F2[label="F2", color="white", shape="rect", image="tabs4keyb_scrin_walk_F2.png"]
+walk_F3[label="F3", color="white", shape="rect", image="tabs4keyb_scrin_walk_F3.png"]
+walk_F4[label="F4", color="white", shape="rect", image="tabs4keyb_scrin_walk_F4.png"]
+walk_F5[label="F5", color="white", shape="rect", image="tabs4keyb_scrin_walk_F5.png"]
+walk_F6[label="F6", color="white", shape="rect", image="tabs4keyb_scrin_walk_F6.png"]
+//vehicle
+vehicle_F1[label="F1", color="white", shape="rect", image="tabs4keyb_scrin_vehicle_F1.png"]
+vehicle_F2[label="F2", color="white", shape="rect", image="tabs4keyb_scrin_vehicle_F2.png"]
+vehicle_F3[label="F3", color="white", shape="rect", image="tabs4keyb_scrin_vehicle_F3.png"]
+vehicle_F4[label="F4", color="white", shape="rect", image="tabs4keyb_scrin_vehicle_F4.png"]
+vehicle_F5[label="F5", color="white", shape="rect", image="tabs4keyb_scrin_vehicle_F5.png"]
+vehicle_F6[label="F6", color="white", shape="rect", image="tabs4keyb_scrin_vehicle_F6.png"]
+vehicle_F7[label="F7", color="white", shape="rect", image="tabs4keyb_scrin_vehicle_F7.png"]
+vehicle_F8[label="F8", color="white", shape="rect", image="tabs4keyb_scrin_vehicle_F8.png"]
+//air
+air_F1[label="F1", color="white", shape="rect", image="tabs4keyb_scrin_air_F1.png"]
+air_F2[label="F2", color="white", shape="rect", image="tabs4keyb_scrin_air_F2.png"]
+air_F3[label="F3", color="white", shape="rect", image="tabs4keyb_scrin_air_F3.png"]
+air_F4[label="F4", color="white", shape="rect", image="tabs4keyb_scrin_air_F4.png"]
+air_F5[label="F5", color="white", shape="rect", image="tabs4keyb_scrin_air_F5.png"]
 
 /*
   //cluster TODO

@@ -9,6 +9,15 @@ dot -Tps graph.dot > graph.ps
 evince graph.ps &
 ~~~
 
+### misc.
+
+dot content
+
+~~~ { .bash }
+./FtoG.sh
+~~~
+
+
 # keyboard
 
 ## keys
