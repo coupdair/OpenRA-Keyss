@@ -24,7 +24,7 @@ digraph scrin
   build_F5 -> build_F9
   build_F4 -> build_F9
   build_F9 -> build_F10
-//others
+//others: with="/**/" without="/** /"
 /**/
   //shield nodes
   subgraph cluster_shield

@@ -22,6 +22,18 @@ dot content
 
 ## keys
 
+### tabs
+
+sudo ./ptouch-print --image /media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/12mm_tabs.png
+
+#### design
+
+gimp 12mm_tabs.xcf &
+#gimp tab_*.png
+
+### Fn
+
+
 ## Fn key map
 
 
