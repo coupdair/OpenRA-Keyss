@@ -25,8 +25,10 @@ digraph scrin
   build_F4 -> build_F9
   build_F9 -> build_F10
 //others
-/** /
+/**/
   //shield nodes
+  subgraph cluster_shield
+  {label="shield" color="gray";
   shield_F1[label="F1", color="white", shape="rect", image="tabs4keyb_scrin_shield_F1.png"]
   shield_F2[label="F2", color="white", shape="rect", image="tabs4keyb_scrin_shield_F2.png"]
   shield_F3[label="F3", color="white", shape="rect", image="tabs4keyb_scrin_shield_F3.png"]
@@ -34,14 +36,20 @@ digraph scrin
   shield_F5[label="F5", color="white", shape="rect", image="tabs4keyb_scrin_shield_F5.png"]
   shield_F6[label="F6", color="white", shape="rect", image="tabs4keyb_scrin_shield_F6.png"]
   shield_F7[label="F7", color="white", shape="rect", image="tabs4keyb_scrin_shield_F7.png"]
+  }//cluster_shield
   //walk nodes
+  subgraph cluster_walk
+  {label="walk" color="gray";
   walk_F1[label="F1", color="white", shape="rect", image="tabs4keyb_scrin_walk_F1.png"]
   walk_F2[label="F2", color="white", shape="rect", image="tabs4keyb_scrin_walk_F2.png"]
   walk_F3[label="F3", color="white", shape="rect", image="tabs4keyb_scrin_walk_F3.png"]
   walk_F4[label="F4", color="white", shape="rect", image="tabs4keyb_scrin_walk_F4.png"]
   walk_F5[label="F5", color="white", shape="rect", image="tabs4keyb_scrin_walk_F5.png"]
   walk_F6[label="F6", color="white", shape="rect", image="tabs4keyb_scrin_walk_F6.png"]
+  }//cluster_walk
   //vehicle nodes
+  subgraph cluster_vehicle
+  {label="vehicle" color="gray";
   vehicle_F1[label="F1", color="white", shape="rect", image="tabs4keyb_scrin_vehicle_F1.png"]
   vehicle_F2[label="F2", color="white", shape="rect", image="tabs4keyb_scrin_vehicle_F2.png"]
   vehicle_F3[label="F3", color="white", shape="rect", image="tabs4keyb_scrin_vehicle_F3.png"]
@@ -50,14 +58,18 @@ digraph scrin
   vehicle_F6[label="F6", color="white", shape="rect", image="tabs4keyb_scrin_vehicle_F6.png"]
   vehicle_F7[label="F7", color="white", shape="rect", image="tabs4keyb_scrin_vehicle_F7.png"]
   vehicle_F8[label="F8", color="white", shape="rect", image="tabs4keyb_scrin_vehicle_F8.png"]
+  }//cluster_vehicle
   //air nodes
+  subgraph cluster_air
+  {label="air" color="gray";
   air_F1[label="F1", color="white", shape="rect", image="tabs4keyb_scrin_air_F1.png"]
   air_F2[label="F2", color="white", shape="rect", image="tabs4keyb_scrin_air_F2.png"]
   air_F3[label="F3", color="white", shape="rect", image="tabs4keyb_scrin_air_F3.png"]
   air_F4[label="F4", color="white", shape="rect", image="tabs4keyb_scrin_air_F4.png"]
   air_F5[label="F5", color="white", shape="rect", image="tabs4keyb_scrin_air_F5.png"]
+  }//cluster_air
   ///shield links
-  build_F1 -> shield_F1[color="blue"]
+  build_F1 -> shield_F1[color="green"]
   build_F3 -> shield_F2[color="blue"]
   build_F2 -> shield_F3[color="blue"]
   build_F2 -> shield_F4[color="blue"]
@@ -67,14 +79,14 @@ digraph scrin
               shield_F6 -> shield_F7[color="gray"]
   build_F9 -> shield_F6[color="blue"]
   ///walk links
-  build_F2 -> walk_F1[color="blue"]
+  build_F2 -> walk_F1[color="green"]
               walk_F1 -> walk_F2[color="gray"]
               walk_F2 -> walk_F3[color="gray"]
   build_F5 -> walk_F4[color="blue"]
               walk_F4 -> walk_F5[color="gray"]
   build_F9 -> walk_F6[color="blue"]
   ///vehicle links
-  build_F4 -> vehicle_F1[color="blue"]
+  build_F4 -> vehicle_F1[color="green"]
               vehicle_F1 -> vehicle_F2[color="gray"]
               vehicle_F2 -> vehicle_F3[color="gray"]
               vehicle_F3 -> vehicle_F4[color="gray"]
@@ -83,7 +95,7 @@ digraph scrin
   build_F9 -> vehicle_F7[color="blue"]
               vehicle_F7 -> vehicle_F8[color="gray"]
   ///air links
-  build_F8 -> air_F1[color="blue"]
+  build_F8 -> air_F1[color="green"]
   build_F8 -> air_F2[color="blue"]
   build_F9 -> air_F2[color="blue"]
               air_F2 -> air_F3[color="gray"]
