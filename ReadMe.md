@@ -31,8 +31,18 @@ sudo ./ptouch-print --image /media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/12mm_tabs.p
 gimp 12mm_tabs.xcf &
 #gimp tab_*.png
 
+### modes
+
+sudo ./ptouch-print --image /media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/12mm_modes.png
+
+#### design
+
+gimp 12mm_modes.xcf &
+#gimp mode_*.png
+
 ### Fn
 
+arrows
 
 ## Fn key map
 
