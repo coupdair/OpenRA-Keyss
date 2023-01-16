@@ -64,6 +64,7 @@ digraph scrin
               shield_F4 -> shield_F5[color="gray"]
   build_F2 -> shield_F6[color="blue"]
               shield_F6 -> shield_F7[color="gray"]
+  build_F9 -> shield_F6[color="blue"]
   ///walk links
   build_F2 -> walk_F1[color="blue"]
               walk_F1 -> walk_F2[color="gray"]
@@ -78,11 +79,11 @@ digraph scrin
               vehicle_F3 -> vehicle_F4[color="gray"]
   build_F5 -> vehicle_F5[color="blue"]
               vehicle_F5 -> vehicle_F6[color="gray"]
-              vehicle_F6 -> vehicle_F7[color="gray"]
   build_F9 -> vehicle_F7[color="blue"]
               vehicle_F7 -> vehicle_F8[color="gray"]
   ///air links
   build_F8 -> air_F1[color="blue"]
+  build_F8 -> air_F2[color="blue"]
   build_F9 -> air_F2[color="blue"]
               air_F2 -> air_F3[color="gray"]
   build_F10 -> air_F4[color="blue"]
