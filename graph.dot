@@ -13,6 +13,19 @@ digraph scrin
   build_F8[label="F8", color="white", shape="rect", image="tabs4keyb_scrin_build_F8.png"]
   build_F9[label="F9", color="white", shape="rect", image="tabs4keyb_scrin_build_F9.png"]
   build_F10[label="F9", color="white", shape="rect", image="tabs4keyb_scrin_build_F10.png"]
+  ///build links
+  build_F1 -> build_F2
+  build_F1 -> build_F3
+  build_F3 -> build_F4
+  build_F3 -> build_F5
+  build_F4 -> build_F6
+  build_F5 -> build_F7
+  build_F5 -> build_F8
+  build_F5 -> build_F9
+  build_F4 -> build_F9
+  build_F9 -> build_F10
+//others
+/** /
   //shield nodes
   shield_F1[label="F1", color="white", shape="rect", image="tabs4keyb_scrin_shield_F1.png"]
   shield_F2[label="F2", color="white", shape="rect", image="tabs4keyb_scrin_shield_F2.png"]
@@ -43,18 +56,6 @@ digraph scrin
   air_F3[label="F3", color="white", shape="rect", image="tabs4keyb_scrin_air_F3.png"]
   air_F4[label="F4", color="white", shape="rect", image="tabs4keyb_scrin_air_F4.png"]
   air_F5[label="F5", color="white", shape="rect", image="tabs4keyb_scrin_air_F5.png"]
-
-  ///build links
-  build_F1 -> build_F2
-  build_F1 -> build_F3
-  build_F3 -> build_F4
-  build_F3 -> build_F5
-  build_F4 -> build_F6
-  build_F5 -> build_F7
-  build_F5 -> build_F8
-  build_F5 -> build_F9
-  build_F4 -> build_F9
-  build_F9 -> build_F10
   ///shield links
   build_F1 -> shield_F1[color="blue"]
   build_F3 -> shield_F2[color="blue"]
@@ -88,4 +89,5 @@ digraph scrin
               air_F2 -> air_F3[color="gray"]
   build_F10 -> air_F4[color="blue"]
               air_F4 -> air_F5[color="gray"]
+/**/
 }
