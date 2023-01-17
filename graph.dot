@@ -1,5 +1,5 @@
-digraph scrin
-{
+digraph OpenRA
+{label="OpenRA CA 0.82: scrin build tree"
   rankdir=LR
 
   //build nodes
@@ -25,7 +25,7 @@ digraph scrin
   build_F4 -> build_F9
   build_F9 -> build_F10
 //others: with="/**/" without="/** /"
-/**/
+/** /
   //shield nodes
   subgraph cluster_shield
   {label="shield" color="gray";
@@ -93,7 +93,7 @@ digraph scrin
   build_F5 -> vehicle_F5[color="blue"]
               vehicle_F5 -> vehicle_F6[color="gray"]
   build_F9 -> vehicle_F7[color="blue"]
-              vehicle_F7 -> vehicle_F8[color="gray"]
+  build_F6 -> vehicle_F8[color="blue"]
   ///air links
   build_F8 -> air_F1[color="green"]
   build_F8 -> air_F2[color="blue"]
@@ -102,4 +102,4 @@ digraph scrin
   build_F10 -> air_F4[color="blue"]
               air_F4 -> air_F5[color="gray"]
 /**/
-}
+}//OpenRA
