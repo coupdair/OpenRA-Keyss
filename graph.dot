@@ -12,7 +12,7 @@ digraph OpenRA
   build_F7[label="F7", color="white", shape="rect", image="tabs4keyb_scrin_build_F7.png"]
   build_F8[label="F8", color="white", shape="rect", image="tabs4keyb_scrin_build_F8.png"]
   build_F9[label="F9", color="white", shape="rect", image="tabs4keyb_scrin_build_F9.png"]
-  build_F10[label="F9", color="white", shape="rect", image="tabs4keyb_scrin_build_F10.png"]
+  build_F10[label="F10", color="white", shape="rect", image="tabs4keyb_scrin_build_F10.png"]
   ///build links
   build_F1 -> build_F2
   build_F1 -> build_F3
@@ -25,7 +25,7 @@ digraph OpenRA
   build_F4 -> build_F9
   build_F9 -> build_F10
 //others: with="/**/" without="/** /"
-/** /
+/**/
   //shield nodes
   subgraph cluster_shield
   {label="shield" color="gray";
