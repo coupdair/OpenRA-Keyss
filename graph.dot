@@ -25,7 +25,7 @@ digraph OpenRA
   build_F4 -> build_F9
   build_F9 -> build_F10
 //others: with="/**/" without="/** /"
-/**/
+/** /
   //shield nodes
   subgraph cluster_shield
   {label="shield" color="gray";
