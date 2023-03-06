@@ -5,14 +5,13 @@
 import Tkinter as Tk
 
 #button window
-class fButton(Tk.Frame):
-  def __init__(self,parent=None, sx=4, sy=2, n=6):
-    Tk.Frame.__init__(self, parent)
+class fButton(Tk.LabelFrame):
+  def __init__(self,parent=None, title="images", sx=4, sy=2, n=6):
+    Tk.LabelFrame.__init__(self, parent,text=title)
     self.parent = parent
     self.init(sx, sy, n)
   #}__init__
   def init(self, sx, sy, n):
-    self.parent.title("Button frame")
     self.pack(fill=Tk.X, padx=5, pady=5)
     self.parent.grid_rowconfigure(1,weight=1)
     self.parent.grid_columnconfigure(1,weight=1)
@@ -34,5 +33,6 @@ class fButton(Tk.Frame):
 if __name__ == "__main__": 
   root=Tk.Tk()
   fButton(root)
+  root.title("Button frame")
   root.mainloop()
 #}__main__
