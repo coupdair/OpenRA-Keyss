@@ -4,8 +4,27 @@
 
 import Tkinter as Tk
 
-#button window
-#class lfButton(Tk.LabelFrame):
+#enable widget
+class lfButton(Tk.LabelFrame):
+  def __init__(self,parent=None, title="images", path="trees/", key='e', sx=4, sy=3, n=10):
+    Tk.LabelFrame.__init__(self, parent,text=title)
+    self.parent = parent
+    self.frame=fButton(parent,path,key,sx,sy,n)
+    self.enable=True
+  #}__init__
+  def init(self, sx, sy, n):
+    ##enable
+    bIm=Tk.Button(parent
+    , text='root'
+    , command= lambda: exit()
+    )
+    bIm.pack(side=Tk.LEFT)
+    self.frame.pack(side=Tk.LEFT)
+  #}init
+  def enable_click(self):
+    print(self.enable)
+  #}button_click
+#}lfButton
 
 #button widget
 class fButton(Tk.Frame):
@@ -44,6 +63,7 @@ class fButton(Tk.Frame):
     self.bImg[y][x].config(bg="green")
     print(self.keys[y][x], x,y)
   #}button_click
+#}fButton
 
 if __name__ == "__main__": 
   root=Tk.Tk()
@@ -61,9 +81,7 @@ if __name__ == "__main__":
   lf.pack(side=Tk.LEFT)
   
   #button groups
-#  fButton(root,"build","trees/scrin/", 'e',4,3,10)
-#  fButton(root,"walk", "trees/scrin/", 'r',4,3,6)
-  fButton(root,"trees/scrin/", 'e',4,3,10)
-  fButton(root,"trees/scrin/", 'r',4,3,6)
+  lfButton(root,"build","trees/scrin/", 'e',4,3,10)
+  lfButton(root,"walk", "trees/scrin/", 'r',4,3,6)
   root.mainloop()
 #}__main__
