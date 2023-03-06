@@ -23,6 +23,7 @@ class fButton(Tk.LabelFrame):
         self.bImg[y][x].grid(row=y,  column=x)
         if i>n-1:
 		  self.bImg[y][x].config(bg="red")
+		  self.bImg[y][x]["state"] = "disabled"
         i=i+1
   #}init
   def button_click(self,x,y):
@@ -32,7 +33,8 @@ class fButton(Tk.LabelFrame):
 
 if __name__ == "__main__": 
   root=Tk.Tk()
-  fButton(root)
   root.title("Button frame")
+  fButton(root)
+  fButton(root,"others",4,2,7)
   root.mainloop()
 #}__main__
