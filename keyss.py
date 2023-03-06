@@ -9,7 +9,6 @@ class lfButton(Tk.LabelFrame):
   def __init__(self,parent=None, title="images", path="trees/", key='e', sx=4, sy=3, n=10):
     Tk.LabelFrame.__init__(self, parent,text=title)
     self.parent = parent
-    self.enable=True
     self.init(path,key, sx,sy,n)
   #}__init__
   def init(self, path,key, sx,sy,n):
@@ -17,11 +16,10 @@ class lfButton(Tk.LabelFrame):
     self.parent.grid_rowconfigure(1,weight=1)
     self.parent.grid_columnconfigure(1,weight=1)
     ##enable
-    bIm=Tk.Button(self
-    , text='self'
-    , command=self.enable_click
-    )
-    bIm.pack(side=Tk.LEFT)
+    self.vEnable=Tk.IntVar()
+    self.vEnable.set(True)
+    cb=Tk.Checkbutton(self, text='',variable=self.vEnable, onvalue=True, offvalue=False, command=self.cbEvent)
+    cb.pack(side=Tk.LEFT)
     ##images
     self.path=path
     self.key=key
@@ -31,14 +29,12 @@ class lfButton(Tk.LabelFrame):
     self.frame=fButton(self, path,key, sx,sy,n)
     self.frame.pack()
   #}init
-  def enable_click(self):
-    print(self.enable)
-    self.enable=not(self.enable)
-    if self.enable:
-	  self.frame=fButton(self, self.path,self.key, self.sx,self.sy,self.n)
+  def cbEvent(self):
+    if (self.vEnable.get()==True):
+      self.frame=fButton(self, self.path,self.key, self.sx,self.sy,self.n)
     else:
-	  self.frame.pack_forget()
-  #}enable_click
+      self.frame.pack_forget()
+  #}cbEvent
 #}lfButton
 
 #button widget
@@ -84,14 +80,14 @@ if __name__ == "__main__":
   root=Tk.Tk()
   root.title("Image button window")
   #test
-  def hide_me(event):
-    event.widget.pack_forget()
-  btn=Tk.Button(root, text="Click")
-  btn.bind('<Button-1>', hide_me)
-  btn.pack()
-  btn2=Tk.Label(root, text="Click too")
-  btn2.bind('<Button-1>', hide_me)
-  btn2.pack()
+  var=Tk.IntVar()
+  def cbEvent():
+    if (var.get() == True):
+      print(var,"True")
+    else:
+	  print(var,"False")
+  cb=Tk.Checkbutton(root, text='',variable=var, onvalue=True, offvalue=False, command=cbEvent)
+  cb.pack()
 
   #button groups
   lfButton(root,"build","trees/scrin/", 'e',4,3,10)
