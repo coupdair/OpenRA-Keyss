@@ -9,17 +9,21 @@ class lfButton(Tk.LabelFrame):
   def __init__(self,parent=None, title="images", path="trees/", key='e', sx=4, sy=3, n=10):
     Tk.LabelFrame.__init__(self, parent,text=title)
     self.parent = parent
-    self.frame=fButton(parent,path,key,sx,sy,n)
     self.enable=True
+    self.init(path,key, sx,sy,n)
   #}__init__
-  def init(self, sx, sy, n):
+  def init(self, path,key, sx,sy,n):
+    self.pack(fill=Tk.X, padx=1, pady=1)
+    self.parent.grid_rowconfigure(1,weight=1)
+    self.parent.grid_columnconfigure(1,weight=1)
     ##enable
-    bIm=Tk.Button(parent
+    bIm=Tk.Button(self
     , text='root'
-    , command= lambda: exit()
+    , command=self.enable_click()
     )
     bIm.pack(side=Tk.LEFT)
-    self.frame.pack(side=Tk.LEFT)
+    self.frame=fButton(self,path,key,sx,sy,n)
+    self.frame.pack()
   #}init
   def enable_click(self):
     print(self.enable)
@@ -68,18 +72,6 @@ class fButton(Tk.Frame):
 if __name__ == "__main__": 
   root=Tk.Tk()
   root.title("Image button window")
-  #test
-  lf=Tk.LabelFrame(root, text="test")
-  ##enable
-  bIm=Tk.Button(lf
-  , text='root'
-  , command= lambda: exit()
-  )
-  bIm.pack(side=Tk.LEFT)
-  ##images
-  f=fButton(lf,"trees/scrin/", 'e',4,3,10)
-  lf.pack(side=Tk.LEFT)
-  
   #button groups
   lfButton(root,"build","trees/scrin/", 'e',4,3,10)
   lfButton(root,"walk", "trees/scrin/", 'r',4,3,6)
