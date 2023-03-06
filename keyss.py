@@ -19,11 +19,11 @@ class fButton(Tk.LabelFrame):
     i=0
     for y in range(sy):
       for x in range(sx):
-        self.bImg[y][x]=Tk.Button(self, text='image['+str(x)+','+str(y)+']', command= lambda x=x,y=y: self.button_click(x,y))
-        self.bImg[y][x].grid(row=y,  column=x)
-        if i>n-1:
-		  self.bImg[y][x].config(bg="red")
-		  self.bImg[y][x]["state"] = "disabled"
+        if i<n:
+          self.bImg[y][x]=Tk.Button(self, text='image['+str(x)+','+str(y)+']', command= lambda x=x,y=y: self.button_click(x,y))
+          self.bImg[y][x].grid(row=y,  column=x)
+        else:
+		  self.bImg[y][x]=None
         i=i+1
   #}init
   def button_click(self,x,y):
