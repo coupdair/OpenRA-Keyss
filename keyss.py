@@ -5,9 +5,12 @@
 import Tkinter as Tk
 
 #button window
-class fButton(Tk.LabelFrame):
-  def __init__(self,parent=None, title="images", path="trees/", key='e', sx=4, sy=3, n=10):
-    Tk.LabelFrame.__init__(self, parent,text=title)
+#class lfButton(Tk.LabelFrame):
+
+#button widget
+class fButton(Tk.Frame):
+  def __init__(self,parent=None, path="trees/", key='e', sx=4, sy=3, n=10):
+    Tk.Frame.__init__(self, parent)
     self.parent = parent
     self.key=key
     self.path=path
@@ -54,12 +57,13 @@ if __name__ == "__main__":
   )
   bIm.pack(side=Tk.LEFT)
   ##images
-  f=fButton(lf,"build","trees/scrin/", 'e',4,3,10)
+  f=fButton(lf,"trees/scrin/", 'e',4,3,10)
   lf.pack(side=Tk.LEFT)
   
   #button groups
-  "trees/scrin"
-  fButton(root,"build","trees/scrin/", 'e',4,3,10)
-  fButton(root,"walk", "trees/scrin/", 'r',4,3,6)
+#  fButton(root,"build","trees/scrin/", 'e',4,3,10)
+#  fButton(root,"walk", "trees/scrin/", 'r',4,3,6)
+  fButton(root,"trees/scrin/", 'e',4,3,10)
+  fButton(root,"trees/scrin/", 'r',4,3,6)
   root.mainloop()
 #}__main__
