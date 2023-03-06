@@ -1,6 +1,9 @@
 #!/usr/bin/python
 
 #Keys Screen
+#- v image   button window (root), i.e. Fn
+#- . image trees, e.g. build=e
+#- _ faction choice window, e.g. scrin/repeater17
 
 import Tkinter as Tk
 
@@ -72,6 +75,7 @@ class fButton(Tk.Frame):
   #}init
   def button_click(self,x,y):
     self.bImg[y][x].config(bg="green")
+    #todo: add sendkeys
     print(self.keys[y][x], x,y)
   #}button_click
 #}fButton
