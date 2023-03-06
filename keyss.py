@@ -45,6 +45,30 @@ class fButton(Tk.LabelFrame):
 if __name__ == "__main__": 
   root=Tk.Tk()
   root.title("Image button window")
+  #test
+  lf=Tk.LabelFrame(root, text="test")
+  ##enable
+  bIm=Tk.Button(lf
+  , text='root'
+  , command= lambda: exit()
+  )
+  bIm.pack(side=Tk.LEFT)
+  ##images
+  f=Tk.Frame(lf)
+  bImg0=Tk.Button(f
+  , text='0'
+  , command= lambda: exit()
+  )
+  bImg0.pack(side=Tk.LEFT)
+  bImg1=Tk.Button(f
+  , text='1'
+  , command= lambda: exit()
+  )
+  bImg1.pack(side=Tk.LEFT)
+  f.pack(side=Tk.LEFT)
+
+  lf.pack(side=Tk.LEFT)
+  
   #button groups
   "trees/scrin"
   fButton(root,"build","trees/scrin/", 'e',4,3,10)
