@@ -79,16 +79,6 @@ class fButton(Tk.Frame):
 if __name__ == "__main__": 
   root=Tk.Tk()
   root.title("Image button window")
-  #test
-  var=Tk.IntVar()
-  def cbEvent():
-    if (var.get() == True):
-      print(var,"True")
-    else:
-	  print(var,"False")
-  cb=Tk.Checkbutton(root, text='',variable=var, onvalue=True, offvalue=False, command=cbEvent)
-  cb.pack()
-
   #button groups
   lfButton(root,"build","trees/scrin/", 'e',4,3,10)
   lfButton(root,"walk", "trees/scrin/", 'r',4,3,6)
