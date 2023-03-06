@@ -6,10 +6,11 @@ import Tkinter as Tk
 
 #button window
 class fButton(Tk.LabelFrame):
-  def __init__(self,parent=None, title="images", key='e', sx=4, sy=3, n=10):
+  def __init__(self,parent=None, title="images", path="trees/", key='e', sx=4, sy=3, n=10):
     Tk.LabelFrame.__init__(self, parent,text=title)
     self.parent = parent
     self.key=key
+    self.path=path
     self.init(sx, sy, n)
   #}__init__
   def init(self, sx, sy, n):
@@ -23,7 +24,7 @@ class fButton(Tk.LabelFrame):
     for y in range(sy):
       for x in range(sx):
         if i<n:
-          self.imgs[y][x]=Tk.PhotoImage(file='tux.png')
+          self.imgs[y][x]=Tk.PhotoImage(file=self.path+self.key+'/f'+str(i+1)+'.png')
           self.bImg[y][x]=Tk.Button(self
           , text=self.key+'_image['+str(x)+','+str(y)+']'
           , image=self.imgs[y][x]
@@ -32,6 +33,7 @@ class fButton(Tk.LabelFrame):
           self.keys[y][x]=self.key+' f'+str(i+1)
         else:
 		  self.bImg[y][x]=None
+		  self.imgs[y][x]=None
 		  self.keys[y][x]=None
         i=i+1
   #}init
@@ -43,24 +45,9 @@ class fButton(Tk.LabelFrame):
 if __name__ == "__main__": 
   root=Tk.Tk()
   root.title("Image button window")
-
-  image0=Tk.PhotoImage(file='tux.png')
-  bImg0=Tk.Button(root
-  , text='root'
-  , image=image0
-  , command= lambda: exit()
-  )
-  bImg0.pack()#side=Tk.LEFT)
-
-  image1=Tk.PhotoImage(file='tux.png')
-  bImg1=Tk.Button(root
-  , text='root'
-  , command= lambda: exit()
-  )
-  bImg1.config(image=image1)
-  bImg1.pack()#side=Tk.RIGHT)
-  
-  fButton(root)
-  fButton(root,"others",'r',4,2,7)
+  #button groups
+  "trees/scrin"
+  fButton(root,"build","trees/scrin/", 'e',4,3,10)
+  fButton(root,"walk", "trees/scrin/", 'r',4,3,6)
   root.mainloop()
 #}__main__
