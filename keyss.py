@@ -18,16 +18,27 @@ class lfButton(Tk.LabelFrame):
     self.parent.grid_columnconfigure(1,weight=1)
     ##enable
     bIm=Tk.Button(self
-    , text='root'
-    , command=self.enable_click()
+    , text='self'
+    , command=self.enable_click
     )
     bIm.pack(side=Tk.LEFT)
-    self.frame=fButton(self,path,key,sx,sy,n)
+    ##images
+    self.path=path
+    self.key=key
+    self.sx=sx
+    self.sy=sy
+    self.n=n
+    self.frame=fButton(self, path,key, sx,sy,n)
     self.frame.pack()
   #}init
   def enable_click(self):
     print(self.enable)
-  #}button_click
+    self.enable=not(self.enable)
+    if self.enable:
+	  self.frame=fButton(self, self.path,self.key, self.sx,self.sy,self.n)
+    else:
+	  self.frame.pack_forget()
+  #}enable_click
 #}lfButton
 
 #button widget
@@ -72,6 +83,16 @@ class fButton(Tk.Frame):
 if __name__ == "__main__": 
   root=Tk.Tk()
   root.title("Image button window")
+  #test
+  def hide_me(event):
+    event.widget.pack_forget()
+  btn=Tk.Button(root, text="Click")
+  btn.bind('<Button-1>', hide_me)
+  btn.pack()
+  btn2=Tk.Label(root, text="Click too")
+  btn2.bind('<Button-1>', hide_me)
+  btn2.pack()
+
   #button groups
   lfButton(root,"build","trees/scrin/", 'e',4,3,10)
   lfButton(root,"walk", "trees/scrin/", 'r',4,3,6)
