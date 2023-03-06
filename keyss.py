@@ -17,12 +17,17 @@ class fButton(Tk.LabelFrame):
     self.parent.grid_rowconfigure(1,weight=1)
     self.parent.grid_columnconfigure(1,weight=1)
     self.bImg=[[0 for x in xrange(sx)] for x in xrange(sy)]
+    self.imgs=[[0 for x in xrange(sx)] for x in xrange(sy)]
     self.keys=[[0 for x in xrange(sx)] for x in xrange(sy)]
     i=0
     for y in range(sy):
       for x in range(sx):
         if i<n:
-          self.bImg[y][x]=Tk.Button(self, text=self.key+'_image['+str(x)+','+str(y)+']', command= lambda x=x,y=y: self.button_click(x,y))
+          self.imgs[y][x]=Tk.PhotoImage(file='tux.png')
+          self.bImg[y][x]=Tk.Button(self
+          , text=self.key+'_image['+str(x)+','+str(y)+']'
+          , image=self.imgs[y][x]
+          , command= lambda x=x,y=y: self.button_click(x,y))
           self.bImg[y][x].grid(row=y,  column=x)
           self.keys[y][x]=self.key+' f'+str(i+1)
         else:
@@ -38,6 +43,23 @@ class fButton(Tk.LabelFrame):
 if __name__ == "__main__": 
   root=Tk.Tk()
   root.title("Image button window")
+
+  image0=Tk.PhotoImage(file='tux.png')
+  bImg0=Tk.Button(root
+  , text='root'
+  , image=image0
+  , command= lambda: exit()
+  )
+  bImg0.pack()#side=Tk.LEFT)
+
+  image1=Tk.PhotoImage(file='tux.png')
+  bImg1=Tk.Button(root
+  , text='root'
+  , command= lambda: exit()
+  )
+  bImg1.config(image=image1)
+  bImg1.pack()#side=Tk.RIGHT)
+  
   fButton(root)
   fButton(root,"others",'r',4,2,7)
   root.mainloop()
