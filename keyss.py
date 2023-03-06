@@ -54,19 +54,7 @@ if __name__ == "__main__":
   )
   bIm.pack(side=Tk.LEFT)
   ##images
-  f=Tk.Frame(lf)
-  bImg0=Tk.Button(f
-  , text='0'
-  , command= lambda: exit()
-  )
-  bImg0.pack(side=Tk.LEFT)
-  bImg1=Tk.Button(f
-  , text='1'
-  , command= lambda: exit()
-  )
-  bImg1.pack(side=Tk.LEFT)
-  f.pack(side=Tk.LEFT)
-
+  f=fButton(lf,"build","trees/scrin/", 'e',4,3,10)
   lf.pack(side=Tk.LEFT)
   
   #button groups
