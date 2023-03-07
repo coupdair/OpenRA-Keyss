@@ -4,7 +4,8 @@
 #- v image   button window (root), i.e. Fn
 #- v image trees, e.g. build=e (ertyu)
 #- _ tooltip on checkbox/...
-#- _ faction choice window, e.g. scrin/repeater17
+#- _ faction choice window, e.g. scrin/repear17
+#- _ mods choice window, e.g. TD, RA, D, CA, ...
 
 import Tkinter as Tk
 import os
@@ -13,7 +14,7 @@ import string
 
 #enable widget
 class lfButton(Tk.LabelFrame):
-  def __init__(self,parent=None, title="images", path="trees/", key='e', sx=4, sy=3, n=10):
+  def __init__(self,parent=None, title="images", path="trees/", key='e', n=10, sx=4, sy=3):
     Tk.LabelFrame.__init__(self, parent,text=title)
     self.parent = parent
     self.init(path,key, sx,sy,n)
@@ -101,10 +102,10 @@ if __name__ == "__main__":
   root=Tk.Tk()
   root.title("Image button window")
   #button groups
-  lfButton(root,"build",   "trees/scrin/", 'e',4,3,10)
-  lfButton(root,"shield",  "trees/scrin/", 'r',4,3,7)
-  lfButton(root,"walk",    "trees/scrin/", 't',4,3,6)
-  lfButton(root,"vehicle", "trees/scrin/", 'y',4,3,8)
-  lfButton(root,"air",     "trees/scrin/", 'u',4,3,5)
+  lfButton(root,"build",   "trees/scrin/", 'e',10)
+  lfButton(root,"shield",  "trees/scrin/", 'r',7)
+  lfButton(root,"walk",    "trees/scrin/", 't',6)
+  lfButton(root,"vehicle", "trees/scrin/", 'y',8)
+  lfButton(root,"air",     "trees/scrin/", 'u',5)
   root.mainloop()
 #}__main__
