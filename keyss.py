@@ -102,10 +102,17 @@ if __name__ == "__main__":
   root=Tk.Tk()
   root.title("Image button window")
   #button groups
-  lfButton(root,"build",   "trees/scrin/", 'e',10)
-  lfButton(root,"shield",  "trees/scrin/", 'r',7)
-  lfButton(root,"walk",    "trees/scrin/", 't',6)
-  lfButton(root,"vehicle", "trees/scrin/", 'y',8)
-  lfButton(root,"air",     "trees/scrin/", 'u',5)
+  path="trees/scrin/"
+  doGroup= ["build","shield","walk","vehicle","air"]
+  keyGroup=['e'    ,'r'     ,'t'   ,'y'      ,'u']
+  nbGroup= [10     ,7       ,6     ,8        ,5] #todo from folder content
+  for i in range(5) :
+    lfButton(root,doGroup[i],path,keyGroup[i],nbGroup[i])
+#  lfButton(root,"build",   path, 'e',10)
+#  lfButton(root,"shield",  path, 'r',7)
+#  lfButton(root,"walk",    path, 't',6)
+#  lfButton(root,"vehicle", path, 'y',8)
+#  lfButton(root,"air",     path, 'u',5)
   root.mainloop()
 #}__main__
+
