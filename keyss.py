@@ -2,7 +2,8 @@
 
 #Keys Screen
 #- v image   button window (root), i.e. Fn
-#- . image trees, e.g. build=e
+#- v image trees, e.g. build=e (ertyu)
+#- _ tooltip on checkbox/...
 #- _ faction choice window, e.g. scrin/repeater17
 
 import Tkinter as Tk
@@ -46,13 +47,13 @@ class lfButton(Tk.LabelFrame):
 def keyssend(keyss):
   fp=tempfile.NamedTemporaryFile()
   cmd="~/pizero-usb-hid-keyboard/sendkeys "+keyss+" > "+fp.name
-  print cmd
+  print(cmd)
   if( os.system(cmd)==0):
     line=fp.read()
   else:
     idle()
     return "usb-hid-keyboard/sendkeys error"
-  print line
+  print(line)
   return line
 #}keyssend
 
@@ -84,9 +85,9 @@ class fButton(Tk.Frame):
           self.bImg[y][x].grid(row=y,  column=x)
           self.keys[y][x]=self.key+' f'+str(i+1)
         else:
-		  self.bImg[y][x]=None
-		  self.imgs[y][x]=None
-		  self.keys[y][x]=None
+          self.bImg[y][x]=None
+          self.imgs[y][x]=None
+          self.keys[y][x]=None
         i=i+1
   #}init
   def button_click(self,x,y):
@@ -100,8 +101,10 @@ if __name__ == "__main__":
   root=Tk.Tk()
   root.title("Image button window")
   #button groups
-  lfButton(root,"build", "trees/scrin/", 'e',4,3,10)
-#  lfButton(root,"shield","trees/scrin/", 'r',4,3,2)
-  lfButton(root,"walk",  "trees/scrin/", 't',4,3,6)
+  lfButton(root,"build",   "trees/scrin/", 'e',4,3,10)
+  lfButton(root,"shield",  "trees/scrin/", 'r',4,3,7)
+  lfButton(root,"walk",    "trees/scrin/", 't',4,3,6)
+  lfButton(root,"vehicle", "trees/scrin/", 'y',4,3,8)
+  lfButton(root,"air",     "trees/scrin/", 'u',4,3,5)
   root.mainloop()
 #}__main__
