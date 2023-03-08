@@ -8,10 +8,35 @@
 #- _ faction choice window, e.g. scrin/repear17
 #- _ mods choice window, e.g. TD, RA, D, CA, ...
 
+#metadata
+__version__     = "0.1.1"
+__author__      = "Sebastien COUDERT" 
+
 import Tkinter as Tk
 import os
 import tempfile
 import string
+import argparse
+
+### CLI option ###
+arg_zoom=1
+parser = argparse.ArgumentParser(description='KeysScreen, i.e. RPI as HID keyboard.'
++ '(%(prog)s v'+__version__+')'
+, epilog="examples: %(prog)s --help; %(prog)s --image-zoom=2"
+)
+##version
+parser.add_argument('-v', '--version'
+, action="store_true", default=False
+, help='show version (default: False) currently v'+__version__)
+##zoom
+parser.add_argument('--image-zoom'
+, default=arg_zoom
+, help='zoom image factor, e.g. 2 (default: %(default)s).')
+
+##parse
+args=parser.parse_args()
+version=args.version
+arg_zoom=int(args.image_zoom)
 
 #enable widget
 class lfButton(Tk.LabelFrame):
@@ -109,12 +134,7 @@ if __name__ == "__main__":
   keyGroup=['e'    ,'r'     ,'t'   ,'y'      ,'u']
   nbGroup= [10     ,7       ,6     ,8        ,5] #todo from folder content
   for i in range(5) :
-    lfButton(root,doGroup[i],path,keyGroup[i],nbGroup[i],2)
-#  lfButton(root,"build",   path, 'e',10)
-#  lfButton(root,"shield",  path, 'r',7)
-#  lfButton(root,"walk",    path, 't',6)
-#  lfButton(root,"vehicle", path, 'y',8)
-#  lfButton(root,"air",     path, 'u',5)
+    lfButton(root,doGroup[i],path,keyGroup[i],nbGroup[i],arg_zoom)
   root.mainloop()
 #}__main__
 
