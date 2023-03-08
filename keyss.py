@@ -9,7 +9,7 @@
 #- _ mods choice window, e.g. TD, RA, D, CA, ...
 
 #metadata
-__version__     = "0.1.2e"
+__version__     = "0.1.2"
 __author__      = "Sebastien COUDERT" 
 
 import Tkinter as Tk
@@ -152,11 +152,12 @@ def dir_count(path):
 if __name__ == "__main__": 
   root=Tk.Tk()
   root.title("Image button window")
-  #button groups
-  doGroup= ["build","shield","walk","vehicle","air"]#,"sea"]
-  keyGroup=['e'    ,'r'     ,'t'   ,'y'      ,'u']#,'i']
-  nbGroup= [10     ,7       ,6     ,8        ,5]#default, will be load from directories
-  count=len(doGroup)
+  #OpenRA button groups
+  doGroup= ["build","shield","walk","vehicle","air","sea"]
+  keyGroup=['e'    ,'r'     ,'t'   ,'y'      ,'u'  ,'i']
+  nbGroup= [10     ,7       ,6     ,8        ,5    ,12]#default, will be load from directories
+#  count=len(doGroup)
+  count=dir_count(arg_path)
   #get image numbers
   for i in range(count) :
     nbGroup[i]=dir_count(arg_path+keyGroup[i]+'/')

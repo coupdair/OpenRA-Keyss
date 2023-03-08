@@ -1,5 +1,11 @@
 OpenRA tree and keyboard
 
+# Keys Screen
+
+~~~ { .bash }
+./keyss.py --tree-path $PWD/trees/scrin/
+~~~
+
 # tree
 
 ## build tree
@@ -16,7 +22,6 @@ dot content
 ~~~ { .bash }
 ./FtoG.sh
 ~~~
-
 
 # keyboard
 
