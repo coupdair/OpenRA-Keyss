@@ -3,13 +3,13 @@
 #Keys Screen
 #- v image   button window (root), i.e. Fn
 #- v image trees, e.g. build=e (ertyu)
-#- . zoom 2x for images
+#- v zoom 2x for images
 #- _ tooltip on checkbox/...
 #- _ faction choice window, e.g. scrin/repear17
 #- _ mods choice window, e.g. TD, RA, D, CA, ...
 
 #metadata
-__version__     = "0.1.1"
+__version__     = "0.1.2d"
 __author__      = "Sebastien COUDERT" 
 
 import Tkinter as Tk
@@ -20,6 +20,8 @@ import argparse
 
 ### CLI option ###
 arg_zoom=1
+arg_path="trees/scrin/"
+
 parser = argparse.ArgumentParser(description='KeysScreen, i.e. RPI as HID keyboard.'
 + '(%(prog)s v'+__version__+')'
 , epilog="examples: %(prog)s --help; %(prog)s --image-zoom=2"
@@ -32,12 +34,19 @@ parser.add_argument('-v', '--version'
 parser.add_argument('--image-zoom'
 , default=arg_zoom
 , help='zoom image factor, e.g. 2 (default: %(default)s).')
+##path
+parser.add_argument('--tree-path'
+, default=arg_path
+, help='path for directory trees (default: %(default)s).')
 
 ##parse
 args=parser.parse_args()
 version=args.version
 arg_zoom=int(args.image_zoom)
+arg_path=args.tree_path
+###} CLI option ###
 
+### GUI ###
 #enable widget
 class lfButton(Tk.LabelFrame):
   def __init__(self,parent=None, title="images", path="trees/", key='e', n=10, zoom=1, sx=4, sy=3):
@@ -124,17 +133,34 @@ class fButton(Tk.Frame):
     print(self.keys[y][x], x,y)
   #}button_click
 #}fButton
+###} GUI ###
+
+def dir_count(path):
+  fp=tempfile.NamedTemporaryFile()
+  cmd="ls "+path+" | wc -l > "+fp.name
+  print(cmd)
+  if( os.system(cmd)==0):
+    line=fp.read()
+  else:
+    idle()
+    return "directory list error"
+  print(line)
+  return int(line)
+#}dir_count
+
 
 if __name__ == "__main__": 
   root=Tk.Tk()
   root.title("Image button window")
   #button groups
-  path="trees/scrin/"
-  doGroup= ["build","shield","walk","vehicle","air"]
-  keyGroup=['e'    ,'r'     ,'t'   ,'y'      ,'u']
-  nbGroup= [10     ,7       ,6     ,8        ,5] #todo from folder content
+  doGroup= ["build","shield","walk","vehicle","air"]#,"sea"]
+  keyGroup=['e'    ,'r'     ,'t'   ,'y'      ,'u']#,'i']
+  nbGroup= [10     ,7       ,6     ,8        ,5]
+  #get image numbers
   for i in range(5) :
-    lfButton(root,doGroup[i],path,keyGroup[i],nbGroup[i],arg_zoom)
+    nbGroup[i]=dir_count(arg_path+keyGroup[i]+'/')
+  for i in range(5) :
+    lfButton(root,doGroup[i],arg_path,keyGroup[i],nbGroup[i],arg_zoom)
   root.mainloop()
 #}__main__
 
