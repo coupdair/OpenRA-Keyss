@@ -3,6 +3,7 @@
 #Keys Screen
 #- v image   button window (root), i.e. Fn
 #- v image trees, e.g. build=e (ertyu)
+#- . zoom 2x for images
 #- _ tooltip on checkbox/...
 #- _ faction choice window, e.g. scrin/repear17
 #- _ mods choice window, e.g. TD, RA, D, CA, ...
@@ -14,12 +15,12 @@ import string
 
 #enable widget
 class lfButton(Tk.LabelFrame):
-  def __init__(self,parent=None, title="images", path="trees/", key='e', n=10, sx=4, sy=3):
+  def __init__(self,parent=None, title="images", path="trees/", key='e', n=10, zoom=1, sx=4, sy=3):
     Tk.LabelFrame.__init__(self, parent,text=title)
     self.parent = parent
-    self.init(path,key, sx,sy,n)
+    self.init(path,key, sx,sy,n, zoom)
   #}__init__
-  def init(self, path,key, sx,sy,n):
+  def init(self, path,key, sx,sy,n, zoom):
     self.pack(fill=Tk.X, padx=1, pady=1)
     self.parent.grid_rowconfigure(1,weight=1)
     self.parent.grid_columnconfigure(1,weight=1)
@@ -34,7 +35,7 @@ class lfButton(Tk.LabelFrame):
     self.sx=sx
     self.sy=sy
     self.n=n
-    self.frame=fButton(self, path,key, sx,sy,n)
+    self.frame=fButton(self, path,key, sx,sy,n, zoom)
     self.frame.pack()
   #}init
   def cbEvent(self):
@@ -60,14 +61,14 @@ def keyssend(keyss):
 
 #button widget
 class fButton(Tk.Frame):
-  def __init__(self,parent=None, path="trees/", key='e', sx=4, sy=3, n=10):
+  def __init__(self,parent=None, path="trees/", key='e', sx=4, sy=3, n=10, zoom=1):
     Tk.Frame.__init__(self, parent)
     self.parent = parent
     self.key=key
     self.path=path
-    self.init(sx, sy, n)
+    self.init(sx, sy, n, zoom)
   #}__init__
-  def init(self, sx, sy, n):
+  def init(self, sx, sy, n, zoom):
     self.pack(fill=Tk.X, padx=5, pady=5)
     self.parent.grid_rowconfigure(1,weight=1)
     self.parent.grid_columnconfigure(1,weight=1)
@@ -79,6 +80,7 @@ class fButton(Tk.Frame):
       for x in range(sx):
         if i<n:
           self.imgs[y][x]=Tk.PhotoImage(file=self.path+self.key+'/f'+str(i+1)+'.png')
+          self.imgs[y][x]=self.imgs[y][x].zoom(zoom,zoom)
           self.bImg[y][x]=Tk.Button(self
           , text=self.key+'_image['+str(x)+','+str(y)+']'
           , image=self.imgs[y][x]
@@ -107,7 +109,7 @@ if __name__ == "__main__":
   keyGroup=['e'    ,'r'     ,'t'   ,'y'      ,'u']
   nbGroup= [10     ,7       ,6     ,8        ,5] #todo from folder content
   for i in range(5) :
-    lfButton(root,doGroup[i],path,keyGroup[i],nbGroup[i])
+    lfButton(root,doGroup[i],path,keyGroup[i],nbGroup[i],2)
 #  lfButton(root,"build",   path, 'e',10)
 #  lfButton(root,"shield",  path, 'r',7)
 #  lfButton(root,"walk",    path, 't',6)
