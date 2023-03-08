@@ -9,7 +9,7 @@
 #- _ mods choice window, e.g. TD, RA, D, CA, ...
 
 #metadata
-__version__     = "0.1.2d"
+__version__     = "0.1.2e"
 __author__      = "Sebastien COUDERT" 
 
 import Tkinter as Tk
@@ -155,11 +155,13 @@ if __name__ == "__main__":
   #button groups
   doGroup= ["build","shield","walk","vehicle","air"]#,"sea"]
   keyGroup=['e'    ,'r'     ,'t'   ,'y'      ,'u']#,'i']
-  nbGroup= [10     ,7       ,6     ,8        ,5]
+  nbGroup= [10     ,7       ,6     ,8        ,5]#default, will be load from directories
+  count=len(doGroup)
   #get image numbers
-  for i in range(5) :
+  for i in range(count) :
     nbGroup[i]=dir_count(arg_path+keyGroup[i]+'/')
-  for i in range(5) :
+  #GUI images
+  for i in range(count) :
     lfButton(root,doGroup[i],arg_path,keyGroup[i],nbGroup[i],arg_zoom)
   root.mainloop()
 #}__main__
