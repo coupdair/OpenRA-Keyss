@@ -3,7 +3,7 @@ OpenRA tree and keyboard
 # Keys Screen
 
 ~~~ { .bash }
-./keyss.py --tree-path $PWD/trees/scrin/
+./keyss.py --tree-path $PWD/trees/CA/scrin/repear17/
 ~~~
 
 # tree
