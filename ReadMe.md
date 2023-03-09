@@ -44,7 +44,13 @@ in [OpenRA/CA](https://github.com/Inq8/CAmod) !
 
 # tree
 
+*scrin* [tree](graph.pdf) is watchable while playing 
+either by displaying it on a second screen 
+or     by printing it on paper.
+
 ## build tree
+
+build the *scrin* [tree](graph.pdf) using [GraphViz](https://graphviz.org/)
 
 ~~~ { .bash }
 dot -Tps graph.dot > graph.ps
