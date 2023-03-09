@@ -87,7 +87,6 @@ def keyssend(keyss):
   if( os.system(cmd)==0):
     line=fp.read()
   else:
-    idle()
     return "usb-hid-keyboard/sendkeys error"
   print(line)
   return line
