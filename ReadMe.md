@@ -1,11 +1,11 @@
 OpenRA tree and keyboards
 
 This is a collection of hardware/doc. 
-helpers for [OpenRA game](https://www.openra.net/)^[GitHub](https://github.com/OpenRA/OpenRA)^:
+helpers for [OpenRA game](https://www.openra.net/) ([GitHub](https://github.com/OpenRA/OpenRA)):
 
-1. standard keyboard tuning (e.g. printed stickers)
-1. touch screen (i.e. RaspBerryPi as HID)
-1. faction trees (presently *scrin*, only)
+1. standard keyboard tuning (e.g. printed stickers [Fn keys](drawing.pdf))
+1. built touch screen (i.e. RaspBerryPi as HID)
+1. faction trees (presently *scrin*, only) as a [graph](graph.pdf)
 
 note: early development of `KEYSS`, current faction available is *scrin*, only (work in progress).
 
@@ -38,7 +38,8 @@ note: early development of `KEYSS`, current faction available is *scrin*, only (
 
 ![CA.v0.82//scrin/repear17](GUI.png)
 
-For example, touch *reactor* image in **build** section to build a *reactor* in OpenRA/CA !
+For example, touch *reactor* image in **build** section to build a *reactor* 
+in [OpenRA/CA](https://github.com/Inq8/CAmod) !
 `Keyss` is sending `E+F1` keys for *reactor* building for your *scrin* faction.
 
 # tree
@@ -64,21 +65,29 @@ dot content
 
 ### tabs
 
+~~~ { .bash }
 sudo ./ptouch-print --image /media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/12mm_tabs.png
+~~~
 
 #### design
 
+~~~ { .bash }
 gimp 12mm_tabs.xcf &
 #gimp tab_*.png
+~~~
 
 ### modes
 
+~~~ { .bash }
 sudo ./ptouch-print --image /media/xubuntu/tempo/LinuxTV/OpenRA/Keyb/12mm_modes.png
+~~~
 
 #### design
 
+~~~ { .bash }
 gimp 12mm_modes.xcf &
 #gimp mode_*.png
+~~~
 
 ### Fn
 
@@ -86,9 +95,12 @@ arrows
 
 ## Fn key map
 
+![build (`E` key) section for F1 to F4 keys](tabs4keyb_scrin_build_F1-F4.png)
+
 
 # misc.
 
+~~~ { .bash }
 ./CombinedArms-0.82-x86_64.AppImage --appimage-mount
 
 d=/tmp/.mount_Combinn5q6Tc
@@ -119,5 +131,5 @@ cp -p $d/usr/share/icons/hicolor/64x64/apps/openra-ca.png images/
 gimp tabs.xcf images/glyphs-2x.png &
 inkscape drawing.svg &
 #print to file "drawing.pdf"
-
+~~~
 
