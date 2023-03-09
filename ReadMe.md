@@ -1,10 +1,27 @@
-OpenRA tree and keyboard
+OpenRA tree and keyboards
+
+This is a collection of hardware/doc. 
+helpers for [OpenRA game](https://www.openra.net/)^[GitHub](https://github.com/OpenRA/OpenRA)^:
+
+1. standard keyboard tuning (e.g. printed stickers)
+1. touch screen (i.e. RaspBerryPi as HID)
+1. faction trees (presently *scrin*, only)
+
+note: early development of `KEYSS`, current faction available is *scrin*, only (work in progress).
 
 # Keys Screen
+
+`Keyss` is a GUI on touch screen for playing game
+, i.e. acts as a keyboard for the game computer.
 
 ~~~ { .bash }
 ./keyss.py --tree-path $PWD/trees/CA/scrin/repear17/
 ~~~
+
+![CA.v0.82//scrin/repear17](GUI.png)
+
+For example, touch *reactor* image in **build** section to build a *reactor* in OpenRA/CA !
+`Keyss` is sending `E+F1` keys for *reactor* building for *scrin* faction.
 
 # tree
 
